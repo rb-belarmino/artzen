@@ -7,7 +7,7 @@ import { MessageCircle, Sparkles, CheckCircle2, ShieldCheck, ArrowDown } from "l
 
 export function HeroSection() {
   return (
-    <section id="hero" className="relative overflow-hidden bg-[#FAF9F6] pt-12 pb-20 sm:pt-20 sm:pb-28 lg:pt-24 lg:pb-32">
+    <section id="hero" className="relative overflow-hidden bg-[#FAF9F6] pt-32 pb-20 sm:pt-40 sm:pb-28 lg:pt-44 lg:pb-32">
       {/* Light Architectural Background with Subtle Furniture/Interior Overlay Texture */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-12 mix-blend-multiply pointer-events-none"
@@ -133,7 +133,7 @@ export function HeroSection() {
                     <p className="text-[11px] text-[#736B63]">{COMPANY_DATA.address.city} - {COMPANY_DATA.address.state}</p>
                   </div>
                   <a
-                    href="#localizacao"
+                    href="#showroom"
                     className="text-xs font-semibold text-[#B58F48] hover:underline"
                   >
                     Ver Localização →
