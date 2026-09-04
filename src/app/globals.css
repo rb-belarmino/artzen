@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 40 20% 98%; /* #FAF9F6 Light Warm Off-White / Sand */
+    --foreground: 24 15% 15%; /* #28231E Elegant Warm Charcoal Text */
+    
+    --card: 0 0% 100%; /* #FFFFFF Crisp Pure White / Warm Ivory card */
+    --card-foreground: 24 15% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 15% 15%;
+    
+    --primary: 38 45% 48%; /* #B58F48 Refined Gold Accent */
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 40 18% 94%; /* #F2EFE9 Warm Sand Secondary */
+    --secondary-foreground: 24 15% 18%;
+    
+    --muted: 40 15% 92%;
+    --muted-foreground: 24 8% 45%;
+    
+    --accent: 38 45% 48%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 38 20% 88%; /* #E8E2D8 Soft warm border */
+    --input: 38 20% 88%;
+    --ring: 38 45% 48%;
+    
+    --radius: 1rem;
+
+    /* Custom Luxury Light Palette */
+    --gold-primary: #B58F48;
+    --gold-dark: #8C6A2E;
+    --gold-light: #DFCA9B;
+    --sand-bg: #FAF9F6;
+    --sand-surface: #F4F1EA;
+    --sand-card: #FFFFFF;
+    --border-gold: rgba(181, 143, 72, 0.25);
+  }
+}
+
+@layer base {
+  * {
+    border-color: rgba(181, 143, 72, 0.18);
+  }
+  html {
+    scroll-behavior: smooth;
+    background-color: #FAF9F6;
+  }
+  body {
+    background-color: #FAF9F6;
+    color: #28231E;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    overflow-x: hidden;
+  }
+}
+
+/* Fluid responsive typography utilities */
+.fluid-h1 {
+  font-size: clamp(2.5rem, 5.5vw + 1rem, 4.25rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.fluid-h2 {
+  font-size: clamp(2rem, 3.8vw + 0.5rem, 3.15rem);
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+}
+
+.fluid-lead {
+  font-size: clamp(1.05rem, 1.3vw + 0.5rem, 1.25rem);
+  line-height: 1.65;
+}
+
+/* Hide scrollbars for clean tab navigation */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Light Architectural Glass & Card Shadows */
+.luxury-glass-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(181, 143, 72, 0.22);
+  box-shadow: 0 10px 30px -10px rgba(40, 35, 30, 0.05);
+}
+
+.luxury-card-light {
+  background: #FFFFFF;
+  border: 1px solid rgba(181, 143, 72, 0.18);
+  box-shadow: 0 12px 32px -8px rgba(40, 35, 30, 0.06);
+}
+
+.luxury-card-light:hover {
+  border-color: rgba(181, 143, 72, 0.45);
+  box-shadow: 0 20px 40px -12px rgba(181, 143, 72, 0.15);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #28231E 0%, #8C6A2E 50%, #B58F48 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-button-gradient {
+  background: linear-gradient(135deg, #C5A059 0%, #A67C37 100%);
+}
