@@ -20,6 +20,7 @@ export interface CompanyInfo {
   };
   readonly contacts: {
     readonly phone: string;
+    readonly phoneDisplay: string;
     readonly whatsappNumber: string;
     readonly whatsappDisplay: string;
     readonly defaultWhatsAppMessage: string;
@@ -62,6 +63,7 @@ export const COMPANY_DATA: CompanyInfo = {
   },
   contacts: {
     phone: "+55 (21) 99832-4466",
+    phoneDisplay: "+55 (21) 99832-4466",
     whatsappNumber: "5521998324466",
     whatsappDisplay: "+55 (21) 99832-4466",
     defaultWhatsAppMessage: "Olá! Gostaria de agendar um atendimento e solicitar um orçamento para o meu projeto planejado com a Artzen."
