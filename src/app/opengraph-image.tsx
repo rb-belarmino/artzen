@@ -104,7 +104,20 @@ export default async function OpenGraphImage() {
               fontWeight: 600,
             }}
           >
-            📍 Teresópolis - RJ
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#E2C39B"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Teresopolis - RJ
           </div>
         </div>
 
@@ -163,7 +176,19 @@ export default async function OpenGraphImage() {
               fontWeight: 600,
             }}
           >
-            ✓ 100% MDF Premium
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#E2C39B"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            100% MDF Premium
           </div>
           <div
             style={{
@@ -179,7 +204,19 @@ export default async function OpenGraphImage() {
               fontWeight: 600,
             }}
           >
-            ✓ Projeto 3D Exclusivo
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#E2C39B"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            Projeto 3D Exclusivo
           </div>
           <div
             style={{
@@ -195,7 +232,19 @@ export default async function OpenGraphImage() {
               fontWeight: 600,
             }}
           >
-            ✓ 5 Anos de Garantia
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#E2C39B"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            5 Anos de Garantia
           </div>
           <div
             style={{
@@ -211,7 +260,19 @@ export default async function OpenGraphImage() {
               fontWeight: 600,
             }}
           >
-            ✓ Montagem Própria
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#E2C39B"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            Montagem Própria
           </div>
         </div>
       </div>
