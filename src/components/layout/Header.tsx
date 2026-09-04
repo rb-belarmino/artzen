@@ -2,39 +2,48 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { COMPANY_DATA } from "@/data/company";
 import { buildWhatsAppUrl } from "@/lib/whatsapp";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Menu, X, Phone, MapPin, Sparkles } from "lucide-react";
 
-export function Header() {
+interface HeaderProps {
+  initialCity?: string;
+}
+
+export function Header({ initialCity = "Teresópolis - RJ" }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Ambientes", href: "#ambientes" },
-    { label: "Diferenciais", href: "#diferenciais" },
-    { label: "Como Funciona", href: "#metodo" },
-    { label: "Materiais", href: "#materiais" },
+    { label: "Início", href: "#hero" },
+    { label: "Projetos 3D", href: "#projects" },
+    { label: "Ambientes", href: "#environments" },
+    { label: "Diferenciais", href: "#differentials" },
+    { label: "Processo", href: "#process" },
+    { label: "Depoimentos", href: "#testimonials" },
     { label: "Dúvidas", href: "#faq" },
-    { label: "Showroom", href: "#localizacao" },
+    { label: "Showroom", href: "#showroom" },
   ];
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-[#E5DFD5] bg-white/90 backdrop-blur-xl transition-all">
-      {/* Top micro announcement bar */}
-      <div className="hidden md:flex w-full bg-[#F7F5F0] text-[#736B63] text-xs py-2 px-4 justify-between items-center tracking-wider border-b border-[#E5DFD5]">
-        <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
-          <div className="flex items-center gap-2 text-[#5A524C]">
-            <MapPin className="w-3.5 h-3.5 text-[#B58F48]" />
-            <span>Showroom: {COMPANY_DATA.address.fullAddressString}</span>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#FAF9F6]/90 backdrop-blur-md border-b border-[#E5DFD5] transition-all">
+      {/* Top micro-bar for trust & contact */}
+      <div className="hidden sm:block border-b border-[#E5DFD5]/60 bg-[#F4F1EA]/80 py-1.5 px-4 sm:px-6 lg:px-8 text-xs text-[#5A524C]">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <div className="flex items-center gap-4">
+            <span className="flex items-center gap-1.5">
+              <MapPin className="w-3.5 h-3.5 text-[#B58F48]" />
+              Showroom: {COMPANY_DATA.address.street}, {COMPANY_DATA.address.number} - {initialCity}
+            </span>
           </div>
           <div className="flex items-center gap-6">
-            <span className="flex items-center gap-1.5 text-[#5A524C] font-medium">
+            <span className="flex items-center gap-1.5">
               <Phone className="w-3.5 h-3.5 text-[#B58F48]" />
-              {COMPANY_DATA.contacts.whatsappDisplay}
+              {COMPANY_DATA.contacts.phoneDisplay}
             </span>
             <span className="text-[#8C6A2E] font-semibold flex items-center gap-1.5 bg-[#B58F48]/10 px-2.5 py-0.5 rounded-full border border-[#B58F48]/20">
-              <Sparkles className="w-3 h-3 text-[#B58F48]" />
+              <Sparkles className="w-3.5 h-3.5 text-[#B58F48]" />
               Projetos 3D 100% Personalizados
             </span>
           </div>
@@ -44,15 +53,15 @@ export function Header() {
       {/* Main navigation */}
       <div className="max-w-7xl mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand Logo */}
-        <Link href="/" className="flex flex-col items-start group">
-          <div className="flex items-center gap-2">
-            <span className="font-serif text-2xl sm:text-3xl font-bold tracking-widest text-[#28231E]">
-              ART<span className="text-[#B58F48]">ZEN</span>
-            </span>
-          </div>
-          <span className="text-[10px] uppercase tracking-[0.25em] text-[#8C6A2E] font-semibold -mt-1">
-            Ambientes Planejados
-          </span>
+        <Link href="/" className="flex items-center group transition-opacity hover:opacity-90">
+          <Image
+            src="/images/logo-dark.png"
+            alt="Artzen Ambientes Planejados"
+            width={180}
+            height={66}
+            priority
+            className="h-10 sm:h-12 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Navigation Links */}

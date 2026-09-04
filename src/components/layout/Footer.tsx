@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { COMPANY_DATA } from "@/data/company";
 import { MapPin, Phone, Instagram, Facebook } from "lucide-react";
 
@@ -13,13 +14,14 @@ export function Footer() {
           
           {/* Brand Summary */}
           <div className="lg:col-span-4 space-y-4">
-            <Link href="/" className="inline-block">
-              <span className="font-serif text-2xl sm:text-3xl font-bold tracking-widest text-[#FAF9F6]">
-                ART<span className="text-[#DFCA9B]">ZEN</span>
-              </span>
-              <span className="block text-[10px] uppercase tracking-[0.25em] text-[#DFCA9B]/90 font-medium">
-                Ambientes Planejados
-              </span>
+            <Link href="/" className="inline-block group transition-opacity hover:opacity-90">
+              <Image
+                src="/images/logo-white.png"
+                alt="Artzen Ambientes Planejados"
+                width={180}
+                height={66}
+                className="h-10 sm:h-12 w-auto object-contain"
+              />
             </Link>
             <p className="text-xs text-[#FAF9F6]/70 leading-relaxed max-w-sm font-normal">
               Móveis planejados sob medida de alto padrão em Teresópolis - RJ. Projetos 3D personalizados, 100% MDF de alta densidade e montagem própria especializada.
