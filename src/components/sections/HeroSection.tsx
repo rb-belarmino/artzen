@@ -7,7 +7,7 @@ import { MessageCircle, Sparkles, CheckCircle2, ShieldCheck, ArrowDown } from "l
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-[#FAF9F6] pt-12 pb-20 sm:pt-20 sm:pb-28 lg:pt-24 lg:pb-32">
+    <section id="hero" className="relative overflow-hidden bg-[#FAF9F6] pt-12 pb-20 sm:pt-20 sm:pb-28 lg:pt-24 lg:pb-32">
       {/* Light Architectural Background with Subtle Furniture/Interior Overlay Texture */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-12 mix-blend-multiply pointer-events-none"

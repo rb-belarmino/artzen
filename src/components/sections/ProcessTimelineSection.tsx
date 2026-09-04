@@ -7,7 +7,7 @@ export function ProcessTimelineSection() {
   const stepIcons = [Box, Layers, Cpu, Hammer];
 
   return (
-    <section className="py-24 bg-[#FAF9F6] border-t border-[#E5DFD5] relative overflow-hidden" id="metodo">
+    <section className="py-24 bg-[#FAF9F6] border-t border-[#E5DFD5] relative overflow-hidden scroll-mt-24" id="metodo">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

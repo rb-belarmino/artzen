@@ -16,7 +16,7 @@ import { buildWhatsAppUrl } from '@/lib/whatsapp'
 export function FaqSection() {
   return (
     <section
-      className="py-24 bg-[#F7F5F0] border-t border-[#E5DFD5] relative overflow-hidden"
+      className="py-24 bg-[#F7F5F0] border-t border-[#E5DFD5] relative overflow-hidden scroll-mt-24"
       id="faq"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

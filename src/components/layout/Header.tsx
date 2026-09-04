@@ -17,11 +17,10 @@ export function Header({ initialCity = "Teresópolis - RJ" }: HeaderProps) {
 
   const navLinks = [
     { label: "Início", href: "#hero" },
-    { label: "Projetos 3D", href: "#projects" },
-    { label: "Ambientes", href: "#environments" },
-    { label: "Diferenciais", href: "#differentials" },
-    { label: "Processo", href: "#process" },
-    { label: "Depoimentos", href: "#testimonials" },
+    { label: "Ambientes", href: "#ambientes" },
+    { label: "Diferenciais", href: "#diferenciais" },
+    { label: "Como Funciona", href: "#metodo" },
+    { label: "Materiais", href: "#materiais" },
     { label: "Dúvidas", href: "#faq" },
     { label: "Showroom", href: "#showroom" },
   ];
