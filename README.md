@@ -3,7 +3,7 @@
 # 🏛️ Artzen — Ambientes Planejados
 ### High-End Bespoke Furniture & Architectural Joinery Landing Page
 
-[![Next.js](https://img.shields.io/badge/Next.js-15.1.7-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-16.3.4-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
@@ -110,7 +110,7 @@ artzen/
 
 | Camada | Tecnologia | Justificativa Técnica |
 | :--- | :--- | :--- |
-| **Framework** | Next.js 15.1 (App Router) | Renderização estática ultrarrápida (SSG) com zero overhead de servidor |
+| **Framework** | Next.js 16.3.4 (App Router) | Renderização estática ultrarrápida (SSG) com Turbopack e zero overhead de servidor |
 | **Biblioteca** | React 19 | Hooks modernos, concorrência e tipagem nativa estrita |
 | **Linguagem** | TypeScript 5.7 | Type-safety ponta a ponta em todos os dados e componentes |
 | **Estilização** | Tailwind CSS v4 + PostCSS | Novo engine de performance baseado no Lightning CSS |
