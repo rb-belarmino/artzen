@@ -47,7 +47,8 @@
   * {
     border-color: rgba(181, 143, 72, 0.18);
   }
-  html {
+  html,
+  html[data-scroll-behavior="smooth"] {
     scroll-behavior: smooth;
     background-color: #FAF9F6;
   }
