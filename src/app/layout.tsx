@@ -45,10 +45,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&h=630&q=80",
-        width: 1200,
-        height: 630,
-        alt: "Artzen Ambientes Planejados Teresópolis",
+        url: "/images/logo-banner.png",
+        width: 1024,
+        height: 576,
+        alt: "Artzen Ambientes Planejados - Móveis Sob Medida em Teresópolis RJ",
       },
     ],
   },
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: "Artzen Ambientes Planejados | Móveis Sob Medida em Teresópolis",
     description:
       "Projetos 3D exclusivos, 100% MDF e montagem própria especializada em Teresópolis - RJ.",
-    images: ["https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&h=630&q=80"],
+    images: ["/images/logo-banner.png"],
   },
   robots: {
     index: true,
